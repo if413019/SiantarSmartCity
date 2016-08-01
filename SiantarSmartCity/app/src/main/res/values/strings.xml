@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Siantar Smart City</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Siantar Smart City</string>
+    <string name="title_activity_status_pengaduan">Daftar Pengaduan</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_add_pengaduan">Buat Pengaduan</string>
+    <string name="title_activity_select_skpd">Pilih SKPD</string>
+    <string name="title_activity_list_pengaduan_user">Daftar Pengaduan</string>
+    <string name="judul">Judul Pengaduan</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="alamatperistiwa">Alamat Peristiwa</string>
+    <string name="title_activity_detail_pengaduan_user">Detail Pengaduan</string>
+    <string name="title_activity_tindak_lanjut">Tindak Lanjut</string>
+    <string name="title_activity_detail_pengaduan_skpd">Detail Pengaduan</string>
+    <string name="title_activity_deatail_pengaduan_on_progress">On Progress</string>
+    <string name="title_activity_respon_pengaduan">Respon Pengaduan</string>
+    <string name="title_activity_track_pengaduan">Semua Pengaduan</string>
+    <string name="title_activity_close_pengaduan">Tutup Pengaduan</string>
+    <string name="title_activity_activity_proses_pengaduan">Detail Pengaduan</string>
+    <string name="title_activity_list_pengaduan_skpd">List Pengaduan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_splash_screen">Siantar Smart City</string>
+    <string name="title_activity_get_started">GetStarted</string>
+    <string name="title_activity_pengaduan_saya">Pengaduan Saya</string>
+    <string name="title_activity_pengaduan_skpd">Pengaduan Diterima</string>
+    <string name="title_activity_skpd">SKPD</string>
+    <string name="title_activity_deskripsi_skpd">Deskripsi SKPD</string>
+    <string name="title_activity_about">Tentang Aplikasi</string>
+    <string name="title_activity_tentang_siantar">Pematang Siantar</string>
+    <string name="title_activity_pilih_skpd">Pilih SKPD</string>
+    <string name="title_activity_pilih_deskripsi_skpd">Pilih SKPD</string>
+    <string name="title_activity_skpd_main">Siantar Smart City</string>
+
+</resources>

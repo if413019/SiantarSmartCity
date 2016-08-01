@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_add_pengaduan"
+    tools:context="com.yohanes.siantarsmartcity.activity.AddPengaduan"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|top">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_weight="1"
+
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_marginTop="120dp"
+            >
+
+            <EditText
+                android:id="@+id/judul"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/judul"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="180dp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/txtTanggal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/judul"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Tanggal Kejadian"
+                android:editable="true"/>
+
+            <EditText
+                android:id="@+id/deskripsi"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:hint="@string/deskripsi"
+                android:padding="10dp"
+                android:singleLine="false"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_margin="10dp"
+                android:layout_weight="0.88"
+                android:minHeight="240dp"
+                android:fadingEdge="vertical|horizontal"
+                android:gravity="top"
+                android:scrollIndicators="right"
+                android:scrollbars="vertical"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtKecamatan"
+                android:background="@drawable/edittext"
+                android:layout_margin="10dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtDesa"
+                android:background="@drawable/edittext"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="@string/alamatperistiwa"
+                android:padding="10dp"
+                android:singleLine="false"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:name="com.google.android.gms.maps.MapFragment"
+                />
+
+            <!-- Login Button -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/imageView3"
+                    android:layout_weight="1"
+                    android:background="#e8e6e6"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.75">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Photo"
+                        android:id="@+id/btnPhoto"
+                        android:drawableLeft="@android:drawable/ic_menu_camera"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="5dp"
+                        android:onClick="showCamera"
+                        android:textAlignment="textEnd"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gallery"
+                        android:id="@+id/btnUpload"
+                        android:drawableLeft="@android:drawable/ic_menu_gallery"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="5dp"
+                        android:onClick="showFileChooser"
+                        android:textAlignment="textEnd"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btn_login_bg"
+                android:text="Submit"
+                android:textColor="@color/input_login"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

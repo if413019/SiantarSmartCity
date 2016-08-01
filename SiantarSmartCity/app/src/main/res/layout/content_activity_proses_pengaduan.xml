@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yohanes.siantarsmartcity.activity.ActivityProsesPengaduan"
+    tools:showIn="@layout/activity_activity_proses_pengaduan"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Judul Pengaduan"
+            android:id="@+id/judulPengaduan"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Created by: "
+                android:id="@+id/createdBy"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="12dp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Created at: "
+                android:id="@+id/createdAt"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="alamatPengaduan"
+                android:id="@+id/alamatPengaduan"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="12dp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="statusPengaduan"
+                android:id="@+id/statusPengaduan"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:layout_gravity="top"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="Proses Pengaduan"
+                android:id="@+id/btnRespon"
+                android:background="@color/colorPrimaryDark2"
+                android:textColor="@color/abc_primary_text_material_dark"
+                android:layout_weight="1"
+                android:onClick="terima"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView2"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/imageDesc"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Deskripsi Pengaduan"
+                android:id="@+id/textView12"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="3dp"
+                android:textSize="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Deskripsi Pengaduan"
+                    android:id="@+id/deskripsiPengaduan"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14dp"
+                    android:gravity="center_horizontal|left"
+                    android:textColor="#6f6f6f"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:paddingBottom="20dp"
+        android:layout_weight="0.85">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Track"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:contextClickable="false"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:drawableTint="@color/abc_primary_text_disable_only_material_dark"
+            android:drawableTintMode="src_in"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom"
+            android:onClick="TindakPengaduan"
+            android:text="Riwayat Pengaduan"/>
+    </LinearLayout>
+
+</LinearLayout>
